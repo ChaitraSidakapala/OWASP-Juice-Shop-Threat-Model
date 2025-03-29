@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "3622462d-fb42-432d-b3e5-af83ea1bb4f6",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "3f1c73dd-9aac-4276-8cdd-4167bc8b5d9a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,7 +361,6 @@
               ]
             },
             "id": "91f65f51-15bd-4ae9-8323-96a52fc4b696",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web Browser",
@@ -396,6 +396,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -479,7 +480,6 @@
               ]
             },
             "id": "e59784c6-0cc8-4bf4-8096-cdae88d06756",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Juice Shop \nBackend Server",
@@ -837,6 +837,51 @@
               ],
               "name": null
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "371e66f1-7da8-4fec-86ce-a5946cff3ddd",
+            "source": {
+              "cell": "e59784c6-0cc8-4bf4-8096-cdae88d06756",
+              "port": "51dc5f80-2628-409f-b4ac-3df3d4458c28"
+            },
+            "target": {
+              "x": 890,
+              "y": 350
+            },
+            "vertices": []
           }
         ]
       }
